@@ -10,13 +10,27 @@ head
 
   // CSS
   != css("revealjs/reset")
+  link(href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", rel="stylesheet", type="text/css")
   != css("revealjs/main")
+  != css("revealjs/zenburn")
   
 body
   .reveal
     .state-background
     .slides
       block content
+
+    // The navigational controls UI
+    aside.controls
+      a.left(href="#") &#x25C4;
+      a.right(href="#") &#x25BA;
+      a.up(href="#") &#x25B2;
+      a.down(href="#") &#x25BC;
+    
+
+    // Presentation progress bar
+    .progress
+      span
 
   != js("lib/head.min.js")
   != js("app")
