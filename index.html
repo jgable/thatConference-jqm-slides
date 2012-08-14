@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>That Conference - jQuery Mobile Offline Apps</title>
+<!-- Mobile Specific-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Font-->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- CSS-->
+<link rel='stylesheet' href='/css/revealjs/reset.css'>
+<link rel='stylesheet' href='/css/revealjs/main.css'>
+<link rel='stylesheet' href='/css/revealjs/zenburn.css'>
+</head>
+<body>
+<div class="reveal">
+    <div class="state-background">
+    </div>
+    <div class="slides">
+        <!-- Landing-->
+        <section>
+        <h1>That Conference</h1>
+        <h3>jQuery Mobile Offline Applications</h3>
+        <p>
+            By: Jacob Gable (aka <a href="http://twitter.com/jacob4u2" title="Jacob Gable on Twitter">@jacob4u2</a>)
+        </p>
+        <p>
+            Hipster slide deck by <a href="http://hakim.se/projects/reveal-js">reveal-js</a>.
+        </p>
+        </section>
+        <!-- Sponsor slides-->
+        <section>
+        <h1>Shout Outs</h1>
+        <section>
+        <h4>Contractually obligated slide includes</h4>
+        </section><section>
+        <!-- Image of thatConference for next year-->
+        <img src="/img/thatConference.png" width="800"></section><section>
+        <!-- Image of sponsors-->
+        <img src="/img/sponsors.png" width="800"></section></section>
+        <!-- About me-->
+        <section>
+        <h1>Jacob Gable</h1>
+        <section>
+        <h3>Get to know me</h3>
+        <p>
+            Twitter: <a href="http://twitter.com/jacob4u2" title="Jacob Gable on Twitter">@jacob4u2</a>
+        </p>
+        <p>
+            About.me: <a href="http://about.me/jgable" title="About Jacob Gable">about.me/jgable</a>
+        </p>
+        </section><section>
+        <h3>Chicagoan</h3>
+        <!-- Built in Chicago image-->
+        <p>
+            <img src="/img/BuiltInChicago.jpg" width="600">
+        </p>
+        <p>
+            Da Bears
+        </p>
+        </section><section>
+        <h3>Father</h3>
+        <!-- Image of Baby-->
+        <p>
+            <img src="/img/babyAddison.jpg" width="200">
+        </p>
+        <p>
+            Cutest. Baby. Ever.
+        </p>
+        </section><section>
+        <h3>jQuery Mobile Contributor</h3>
+        <!-- Image of jQuery Mobile release notes-->
+        <p>
+            <img src="/img/jqm-commit.png" width="600">
+        </p>
+        <p>
+            That's me.
+        </p>
+        </section><section>
+        <h3>On The Web</h3>
+        <!-- My Blog-->
+        <p>
+            <img src="/img/jacobgable_com.png" width="600">
+        </p>
+        <p>
+            Always under construction.
+        </p>
+        </section></section>
+        <!-- Overview-->
+        <section>
+        <h2>Overview</h2>
+        <ol>
+            <li>Single Page Architecture</li>
+            <li>Offline Data Access (localStorage, webSql...)</li>
+            <li>Cache Manifest (and updates...)</li>
+        </ol>
+        </section><section>
+        <h2>Single Page Architecture</h2>
+        <div class="someCode">
+            <pre>
+                <code contenteditable>
+                &lt;body&gt; &lt;!-- Home Page --&gt; &lt;div id=&quot;home&quot; data-role=&quot;page&quot;&gt; &lt;!-- /... Snip ... / --&gt; &lt;/div&gt; &lt;!-- Session Details Page --&gt; &lt;div id=&quot;session&quot; data-role=&quot;page&quot;&gt; &lt;div data-role=&quot;header&quot;&gt; &lt;a data-rel=&quot;back&quot; href=&quot;#home&quot; data-icon=&quot;arrow-l&quot;&gt;Sessions &lt;/a&gt; &lt;h1 id=&quot;sessionTitle&quot;&gt;&lt;/h1&gt; &lt;/div&gt; &lt;div data-role=&quot;content&quot;&gt; &lt;div id=&quot;sessionDetails&quot;&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; </code>
+            </pre>
+        </div>
+        </section><section>
+        <h1>Example Online App Walkthrough</h1>
+        <p>
+            I can haz teh codez?
+        </p>
+        </section><section>
+        <h2>Going Offline</h2>
+        <ul>
+            <li>Determine what data you need and expose it</li>
+            <li>Create an Offline Data Downloader</li>
+            <li>Store your data in client side persistence (localStorage)</li>
+            <li>Store a value indicating where data should be pulled from</li>
+        </ul>
+        </section><section>
+        <h2>Cache Manifest</h2>
+        <ul>
+            <li>Add your manifest='/cache.manifest' attribute to the html element.</li>
+            <li>Determine your assets by seeing what your page loads.</li>
+            <li>Create your cache.manifest file with the required assets in the CACHE section.</li>
+        </ul>
+        </section><section>
+        <h1>Finish</h1>
+        <p>
+            Holla back
+        </p>
+        <p>
+            Jacob Gable (aka <a href="http://twitter.com/jacob4u2" title="Jacob Gable on Twitter">@jacob4u2</a>)
+        </p>
+        </section>
+    </div>
+    <!-- The navigational controls UI-->
+    <aside class="controls"><a href="#" class="left">&#x25C4;</a><a href="#" class="right">&#x25BA;</a><a href="#" class="up">&#x25B2;</a><a href="#" class="down">&#x25BC;</a></aside>
+    <!-- Presentation progress bar-->
+    <div class="progress">
+        <span></span>
+    </div>
+</div>
+<script src='/js/lib/head.min.js'></script>
+<script src='/js/app.js'></script>
+</body>
+</html>
