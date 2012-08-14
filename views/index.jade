@@ -8,6 +8,9 @@ block content
 
     p By: Jacob Gable (aka <a href="http://twitter.com/jacob4u2" title="Jacob Gable on Twitter">@jacob4u2</a>)
 
+    p Hipster slide deck by <a href="http://hakim.se/projects/reveal-js">reveal-js</a>.
+
+  // Sponsor slides
   section
     h1 Shout Outs
 
@@ -18,11 +21,11 @@ block content
       // Image of thatConference for next year
       img(src="/img/thatConference.png", width="800")
 
-
     section 
       // Image of sponsors
       img(src="/img/sponsors.png", width="800")
-
+  
+  // About me
   section
     h1 Jacob Gable
   
@@ -69,3 +72,73 @@ block content
         img(src="/img/jacobgable_com.png", width="600")
 
       p Always under construction.
+  
+  // Overview
+  section
+    h2 Overview
+
+    ol
+      li Single Page Architecture
+      li Offline Data Access (localStorage, webSql...)
+      li Cache Manifest (and updates...)
+
+  section
+    h2 Single Page Architecture
+
+    .someCode.
+      <pre><code contenteditable>
+        &lt;body&gt;
+          &lt;!-- Home Page --&gt;
+          &lt;div id=&quot;home&quot; data-role=&quot;page&quot;&gt;
+            &lt;!-- /... Snip ... / --&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Session Details Page --&gt;
+          &lt;div id=&quot;session&quot; data-role=&quot;page&quot;&gt;
+            &lt;div data-role=&quot;header&quot;&gt;
+              &lt;a data-rel=&quot;back&quot; 
+                 href=&quot;#home&quot; 
+                 data-icon=&quot;arrow-l&quot;&gt;Sessions
+              &lt;/a&gt;
+
+              &lt;h1 id=&quot;sessionTitle&quot;&gt;&lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div data-role=&quot;content&quot;&gt;
+              &lt;div id=&quot;sessionDetails&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/body&gt;
+      </code></pre>
+
+  section
+    h1 Example Online App Walkthrough
+
+    p I can haz teh codez?
+
+  section
+    h2 Going Offline
+
+    ul
+      li Determine what data you need and expose it
+      li Create an Offline Data Downloader
+      li Store your data in client side persistence (localStorage)
+      li Store a value indicating where data should be pulled from
+
+  section
+    h2 Cache Manifest
+
+    ul
+      li Add your manifest='/cache.manifest' attribute to the html element.
+      li Determine your assets by seeing what your page loads.
+      li Create your cache.manifest file with the required assets in the CACHE section.
+      
+  section
+    h1 Finish
+
+    p Holla back
+
+    p Jacob Gable (aka <a href="http://twitter.com/jacob4u2" title="Jacob Gable on Twitter">@jacob4u2</a>)    
+
+        
+          
